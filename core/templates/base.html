@@ -11,9 +11,6 @@
   <meta name="author" content="">
 
 
-{% block title %}
-  <title>Pagina Principal</title>{% endblock %}
-
   <!-- Custom fonts for this template-->
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 
@@ -139,8 +136,10 @@
         </ol>
 
         <!-- Page Content -->
+        {% block h1 %}
         <h1>Blank Page</h1>
         <hr>
+        {% endblock h1%}
        {% block content %}{% endblock %}
 
       </div>
